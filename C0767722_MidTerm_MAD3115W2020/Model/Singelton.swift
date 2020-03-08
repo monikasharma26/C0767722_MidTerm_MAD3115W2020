@@ -9,6 +9,18 @@
 import Foundation
 class Singelton {
     
+    static let intance = Singelton()
+    private init(){}
+    var customerArr = [CustomersVM]()
     
+    func populateCustomer() {
+        // fetching data from json...
+        let customers = DataSource.readJsonWith(name: "Customer")
+        Singelton.intance.customerArr.removeAll()
+        for cust_mer in customers {
+            Singelton.intance.customerArr.append(CustomersVM(customer: cust_mer))
+        }
+        
+    }
     
 }

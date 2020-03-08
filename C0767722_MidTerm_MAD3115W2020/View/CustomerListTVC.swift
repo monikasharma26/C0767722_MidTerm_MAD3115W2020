@@ -21,15 +21,12 @@ class CustomerListTVC: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
         contan_view.addBorder(view: contan_view, radius: 8.0, width: 1, color: UIColor.lightGray.cgColor)
         
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     // MARK: - Helper

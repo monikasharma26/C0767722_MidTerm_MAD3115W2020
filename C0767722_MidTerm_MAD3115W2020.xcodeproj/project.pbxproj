@@ -93,11 +93,13 @@
 			isa = PBXGroup;
 			children = (
 				CE9EDC43240F7A6D00BBA832 /* C0767722_MidTerm_MAD3115W2020 */,
+				CE9EDC52240F7A6F00BBA832 /* Info.plist */,
 				CE9EDC42240F7A6D00BBA832 /* Products */,
 				5B52BDFFC241C5A34D66161E /* Pods */,
 				C68F3A78B0A6ADAACAFB9D23 /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			wrapsLines = 1;
 		};
 		CE9EDC42240F7A6D00BBA832 /* Products */ = {
 			isa = PBXGroup;
@@ -111,9 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				CEBAE31224136888005A7571 /* Others */,
-				CEBAE2EB24131961005A7571 /* View */,
+				CEBAE2EB24131961005A7571 /* ViewController */,
 				CEBAE2EA2413195D005A7571 /* Model */,
-				CE9EDC52240F7A6F00BBA832 /* Info.plist */,
 			);
 			path = C0767722_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -129,7 +130,7 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		CEBAE2EB24131961005A7571 /* View */ = {
+		CEBAE2EB24131961005A7571 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				CEBAE31F24137D97005A7571 /* CustomerListVC.swift */,
@@ -143,7 +144,7 @@
 				CEBAE31C24137D56005A7571 /* Home.storyboard */,
 				CEBAE32124137E3C005A7571 /* AddCustomerVC.swift */,
 			);
-			path = View;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		CEBAE31224136888005A7571 /* Others */ = {
@@ -151,7 +152,6 @@
 			children = (
 				CEBAE32324137F5E005A7571 /* Sources */,
 				CEBAE31324136894005A7571 /* Extensions */,
-				CEBAE3162413695A005A7571 /* DataInfo.plist */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -171,6 +171,7 @@
 			children = (
 				CEBAE32624137F93005A7571 /* Protocol.swift */,
 				CEBAE32824137FA4005A7571 /* DataSource.swift */,
+				CEBAE3162413695A005A7571 /* DataInfo.plist */,
 				CEBAE32B2413803B005A7571 /* Customer.json */,
 			);
 			path = Sources;
@@ -455,11 +456,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6TKWNQ3PBX;
-				INFOPLIST_FILE = C0767722_MidTerm_MAD3115W2020/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "swift.C0767722-MidTerm-MAD3115W2020";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -474,11 +476,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6TKWNQ3PBX;
-				INFOPLIST_FILE = C0767722_MidTerm_MAD3115W2020/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "swift.C0767722-MidTerm-MAD3115W2020";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

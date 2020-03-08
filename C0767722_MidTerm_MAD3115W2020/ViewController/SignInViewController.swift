@@ -35,7 +35,7 @@ class SignInViewController: UIViewController {
     
     // MARK: - Action
     @IBAction func userHintBtnClicked(_ sender: Any) {
-        self.showAlert(title: "User Name:", message: "Monika")
+        self.showAlert(title: "User Name Hint :", message: "")
     }
    
     

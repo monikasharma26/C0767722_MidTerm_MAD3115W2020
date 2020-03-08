@@ -73,8 +73,6 @@ class CustomerListVC: UIViewController {
         
     }
     
-    
-    
     @objc func refresh() {
         //
         custmList_tv.reloadData()

@@ -35,12 +35,12 @@ class SignInViewController: UIViewController {
     
     // MARK: - Action
     @IBAction func userHintBtnClicked(_ sender: Any) {
-        self.showAlert(title: "User Name Hint :", message: "")
+        self.showAlert(title: "User Name Hint :", message: "Enter Characters and Numbers")
     }
    
     
     @IBAction func passwdHintBtnClicked(_ sender: Any) {
-        self.showAlert(title: "Password:", message: "c0767722")
+        self.showAlert(title: "Password Hint:", message: "Enter characters")
     }
     
     @IBAction func rememberBtnClicked(_ sender: UIButton) {
@@ -85,7 +85,6 @@ class SignInViewController: UIViewController {
         if let userName = UserDefaults.standard.string(forKey: "user_name"), let passwd = UserDefaults.standard.string(forKey: "password") {
             //
             remembBtn.isSelected = true
-            
             userN_tf.text = userName
             passwd_tf.text = passwd
         }else{

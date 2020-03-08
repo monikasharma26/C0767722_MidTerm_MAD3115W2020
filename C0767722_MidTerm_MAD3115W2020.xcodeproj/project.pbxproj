@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE9BBDFF2415B53C00D15376 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9BBDFE2415B53C00D15376 /* Detail.storyboard */; };
+		CE9BBE012415B5F900D15376 /* CustomerDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9BBE002415B5F900D15376 /* CustomerDetailVC.swift */; };
 		CE9EDC45240F7A6D00BBA832 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EDC44240F7A6D00BBA832 /* AppDelegate.swift */; };
 		CE9EDC47240F7A6D00BBA832 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EDC46240F7A6D00BBA832 /* SceneDelegate.swift */; };
 		CE9EDC49240F7A6D00BBA832 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9EDC48240F7A6D00BBA832 /* SignInViewController.swift */; };
@@ -34,6 +36,8 @@
 /* Begin PBXFileReference section */
 		5629F6042B26C880AE6F149B /* Pods_C0767722_MidTerm_MAD3115W2020.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_C0767722_MidTerm_MAD3115W2020.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD9296B9BCB5FE3714A25155 /* Pods-C0767722_MidTerm_MAD3115W2020.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-C0767722_MidTerm_MAD3115W2020.release.xcconfig"; path = "Target Support Files/Pods-C0767722_MidTerm_MAD3115W2020/Pods-C0767722_MidTerm_MAD3115W2020.release.xcconfig"; sourceTree = "<group>"; };
+		CE9BBDFE2415B53C00D15376 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		CE9BBE002415B5F900D15376 /* CustomerDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailVC.swift; sourceTree = "<group>"; };
 		CE9EDC41240F7A6D00BBA832 /* C0767722_MidTerm_MAD3115W2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C0767722_MidTerm_MAD3115W2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9EDC44240F7A6D00BBA832 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9EDC46240F7A6D00BBA832 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 				CE9EDC44240F7A6D00BBA832 /* AppDelegate.swift */,
 				CEBAE31C24137D56005A7571 /* Home.storyboard */,
 				CEBAE32124137E3C005A7571 /* AddCustomerVC.swift */,
+				CE9BBDFE2415B53C00D15376 /* Detail.storyboard */,
+				CE9BBE002415B5F900D15376 /* CustomerDetailVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -241,6 +247,7 @@
 				CEBAE32C2413803B005A7571 /* Customer.json in Resources */,
 				CEBAE31D24137D56005A7571 /* Home.storyboard in Resources */,
 				CE9EDC4E240F7A6F00BBA832 /* Assets.xcassets in Resources */,
+				CE9BBDFF2415B53C00D15376 /* Detail.storyboard in Resources */,
 				CEBAE3172413695A005A7571 /* DataInfo.plist in Resources */,
 				CE9EDC4C240F7A6D00BBA832 /* Welcome.storyboard in Resources */,
 			);
@@ -310,6 +317,7 @@
 				CEBAE32924137FA4005A7571 /* DataSource.swift in Sources */,
 				CEBAE32724137F93005A7571 /* Protocol.swift in Sources */,
 				CEBAE332241381CA005A7571 /* CustomersM.swift in Sources */,
+				CE9BBE012415B5F900D15376 /* CustomerDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

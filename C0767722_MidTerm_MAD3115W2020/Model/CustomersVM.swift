@@ -34,3 +34,28 @@ class CustomersVM: NSObject {
     
 }
 
+// MARK:- UITableViewDataSource
+extension CustomerListVC: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return Singelton.intance.customerArr.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomerListTVC", for: indexPath ) as! CustomerListTVC
+        //
+        let customerData = Singelton.intance.customerArr[indexPath.row]
+        //
+        cell.setDisplay(customer: customerData)
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+           
+           return 100
+       }
+    
+}

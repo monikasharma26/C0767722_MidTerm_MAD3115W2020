@@ -11,4 +11,26 @@ import Foundation
 
 class CustomersVM: NSObject {
 
+// MARK: - Properties
+    var id: Int?
+    var firstName: String?
+    var lastName: String?
+    var email: String?
+
+    /// this is used to concat fisrt name and last name
+    var calFull: String {
+        get {
+              return (firstName ?? "") + " " + (lastName ?? "")
+           }
+    }
+    
+    // MARK: - Life Cycle
+    init(customer: CustomersM){
+        self.id = customer.id
+        self.firstName = customer.firstName
+        self.lastName = customer.lastName
+        self.email = customer.email
+    }
+    
 }
+

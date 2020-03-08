@@ -8,8 +8,7 @@
 
 import Foundation
 
-protocol IPrintPC {
-    /// This method will display data
-    func displayData()
+protocol IDisplay {
+   
 }
 

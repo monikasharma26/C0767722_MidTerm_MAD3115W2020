@@ -31,7 +31,6 @@ import UIKit
            setUpUI()
 
        }
-       
        // MARK: - Action
        @IBAction func cancelBtnClicked(_ sender: Any) {
            //
@@ -41,7 +40,7 @@ import UIKit
        @IBAction func doneBtnClicked(_ sender: Any) {
            // check validation
            if self.checkTextFields() {
-               
+
                //
                let boolChk = self.emailAlready().0
                let newId = self.emailAlready().1
@@ -49,29 +48,24 @@ import UIKit
                    //
                    let newCustomer = CustomersM(id: (newId + 1), firstName: fName_tf.text, lastName: lName_tf.text, email: email_tf.text)
                    
-                   Singelton.singObj.customerArr.append(CustomersVM(customer: newCustomer))
+                   Singelton.intance.customerArr.append(CustomersVM(customer: newCustomer))
                    
                    NotificationCenter.default.post(name: Notification.Name("customerListRefresh"), object: nil)
-                   
-                   //
-                   doneCompleted()
+                   customerAdd()
                   
                }else{
-                   self.showAlert(title: "NJ", message: "E-mail address already used")
+                   self.showAlert(title: "", message: "E-mail address already used")
                }
            }
        }
 
        // MARK: - Helper
-       func doneCompleted() {
+       func customerAdd() {
            //
-           let alertController = UIAlertController(title: "NJ", message: "Customer Created Successfully.", preferredStyle: .alert)
+           let alertController = UIAlertController(title: "Success", message: "Customer Created Successfully.", preferredStyle: .alert)
            let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.destructive) {
                UIAlertAction in
-               
-               //
                 self.dismiss(animated: true, completion: nil)
-               
            }
            
            // Add the actions
@@ -86,33 +80,29 @@ import UIKit
            fNameInn_view.addBorder(view: fNameInn_view, radius: 7.0, width: 1, color: UIColor.lightGray.cgColor)
            lNameInn_view.addBorder(view: lNameInn_view, radius: 7.0, width: 1, color: UIColor.lightGray.cgColor)
            emailInn_view.addBorder(view: emailInn_view, radius: 7.0, width: 1, color: UIColor.lightGray.cgColor)
-           
            cancelBtn.addBorder(view: cancelBtn, radius: 8.0, width: 1, color: UIColor.hexStringToUIColor(hex: "6D67FD").cgColor)
-           //
            contan_view.addShadow(view: contan_view, color: UIColor.white.cgColor, offset: CGSize(width: -4, height: 4), opacity: 0.8, radius: 20)
-           
-           
        }
        
        //
        func checkTextFields() -> Bool {
            //
            if fName_tf.text == "" {
-               self.showAlert(title: "NJ", message: "First Name is required.")
+               self.showAlert(title: "", message: "First Name is required.")
                return false
            }
            if lName_tf.text == "" {
-               self.showAlert(title: "NJ", message: "Last Name is required.")
+               self.showAlert(title: "", message: "Last Name is required.")
                return false
            }
            if email_tf.text == "" {
-               self.showAlert(title: "NJ", message: "E-mail address is required.")
+               self.showAlert(title: "", message: "E-mail address is required.")
                return false
            }
            let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,10}"
            let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
            if emailTest.evaluate(with: email_tf.text) == false {
-               self.showAlert(title: "NJ", message: "Please Enter Valid Email Address..!!!")
+               self.showAlert(title: "", message: "Please Enter Valid Email Address..!!!")
                return false
            }
            
@@ -123,7 +113,7 @@ import UIKit
        func emailAlready() -> (Bool, Int) {
            var id = Int()
            
-           let custArr = Singelton.singObj.customerArr
+           let custArr = Singelton.intance.customerArr
            // check if email exists or not...
            for customer in custArr {
                if email_tf.text == customer.email {

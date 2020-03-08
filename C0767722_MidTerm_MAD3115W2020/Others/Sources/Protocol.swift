@@ -9,6 +9,7 @@
 import Foundation
 
 protocol IDisplay {
-   
+   /// This method will display data
+      func displayData()
 }
 

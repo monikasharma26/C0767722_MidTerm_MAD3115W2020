@@ -1,0 +1,202 @@
+{
+    "Customer": [{
+                    "id": 1,
+                    "firstName": "Monika",
+                    "lastName": "Sharma",
+                    "email": "monikasharma@gmail.com",
+                    "bills": [{
+                            "id": "Inter001",
+                            "date": "2020-01-12",
+                            "type": "Internet",
+                            "amount": 126.99,
+                            "nameIn": "Bell Inc.",
+                            "dataIn": 11.50
+                        
+                         },
+                         {
+                            "id": "Mob001",
+                            "date": "2020-01-04",
+                            "type": "Mobile",
+                            "amount": 110.88,
+                            "nameMo": "Freedom",
+                            "planMo": "Freedom",
+                            "phoneNoMo": "123-786-1232",
+                            "dataMo": 26.00,
+                            "minutesMo": "132"
+                        
+                         },
+                         {
+                             "id": "Hyd001",
+                             "date": "2020-07-05",
+                             "type": "Hydro",
+                             "amount": 19.12,
+                             "nameHy": "Toronto Hydros",
+                             "unitsHy": 120.00
+                         
+                        }]
+                  },
+                  {
+                    "id": 2,
+                    "firstName": "IKroop",
+                    "lastName": "Virk",
+                    "email": "ikroopvirk@gmail.com",
+                    "bills": [{
+                            "id": "Inter002",
+                            "date": "2020-04-02",
+                            "type": "Internet",
+                            "amount": 111.11,
+                            "nameIn": "Bell Inc.",
+                            "dataIn": 232.12
+                        
+                         },
+                         {
+                            "id": "Mob002",
+                            "date": "2020-01-04",
+                            "type": "Mobile",
+                            "amount": 110.88,
+                            "nameMo": "Freedom",
+                            "planMo": "Silver",
+                            "phoneNoMo": "654-156-3453",
+                            "dataMo": 120.00,
+                            "minutesMo": "50"
+                        
+                         },
+                         {
+                             "id": "Hyd002",
+                             "date": "2020-02-01",
+                             "type": "Hydro",
+                             "amount": 123.71,
+                             "nameHy": "Toronto Hydros",
+                             "unitsHy": 121.00
+                         
+                        }]
+                  
+                  },
+                  {
+                    "id": 3,
+                    "firstName": "Kritima",
+                    "lastName": "Kukreja",
+                    "email": "kriKukreja@gmail.com",
+                    "bills": [{
+                            "id": "Inter003",
+                            "date": "2020-01-14",
+                            "type": "Internet",
+                            "amount": 186.33,
+                            "nameIn": "Bell Inc.",
+                            "dataIn": 340.50
+                        
+                         },
+                         {
+                            "id": "Mob003",
+                            "date": "2020-02-05",
+                            "type": "Mobile",
+                            "amount": 120.88,
+                            "nameMo": "Freedom",
+                            "planMo": "Platinum",
+                            "phoneNoMo": "544-336-1203",
+                            "dataMo": 570.00,
+                            "minutesMo": "190"
+                        
+                         },
+                         {
+                             "id": "Hyd003",
+                             "date": "2020-01-03",
+                             "type": "Hydro",
+                             "amount": 140.78,
+                             "nameHy": "Toronto Hydros",
+                             "unitsHy": 121.00
+                         
+                        }]
+                  
+                  },
+                  {
+                    "id": 4,
+                    "firstName": "Aman",
+                    "lastName": "Kaur",
+                    "email": "amankaur@gmail.com",
+                    "bills": [{
+                            "id": "Inter004",
+                            "date": "2020-01-01",
+                            "type": "Internet",
+                            "amount": 226.33,
+                            "nameIn": "Bell Inc.",
+                            "dataIn": 110.90
+                        
+                         },
+                         {
+                            "id": "Mob004",
+                            "date": "2020-02-02",
+                            "type": "Mobile",
+                            "amount": 130.88,
+                            "nameMo": "Freedom",
+                            "planMo": "Gold",
+                            "phoneNoMo": "674-133-1441",
+                            "dataMo": 135.00,
+                            "minutesMo": "750"
+                        
+                         },
+                         {
+                             "id": "Hyd004",
+                             "date": "2020-02-02",
+                             "type": "Hydro",
+                             "amount": 120.08,
+                             "nameHy": "Toronto Hydros",
+                             "unitsHy": 767.00
+                         
+                        }]
+                  
+                  },
+                  {
+                    "id": 5,
+                    "firstName": "Anmol",
+                    "lastName": "Singh",
+                    "email": "anmolSingh@gmail.com",
+                    "bills": [{
+                            "id": "Inter005",
+                            "date": "2020-01-02",
+                            "type": "Internet",
+                            "amount": 786.33,
+                            "nameIn": "Bell Inc.",
+                            "dataIn": 130.90
+                        
+                         },{
+                            "id": "Mob005",
+                            "date": "2020-07-07",
+                            "type": "Mobile",
+                            "amount": 121.38,
+                            "nameMo": "Fido",
+                            "planMo": "Gold",
+                            "phoneNoMo": "633-236-2322",
+                            "dataMo": 170.00,
+                            "minutesMo": "190"
+                        
+                         },{
+                             "id": "Hyd005",
+                             "date": "2020-01-04",
+                             "type": "Hydro",
+                             "amount": 720.08,
+                             "nameHy": "Inter City Hydros",
+                             "unitsHy": 230.60
+                         
+                        }]
+                            
+                  },
+                  {
+                    "id": 6,
+                    "firstName": "Arshita",
+                    "lastName": "Sharma",
+                    "email": "arshita@gmail.com",
+                    "bills": []
+                            
+                  },
+                  {
+                    "id": 7,
+                    "firstName": "Alok",
+                    "lastName": "Sharma",
+                    "email": "ak@gmail.com",
+                    "bills": []
+                  
+                  }
+                 ]
+}
+

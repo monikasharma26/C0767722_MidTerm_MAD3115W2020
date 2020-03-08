@@ -20,7 +20,6 @@
 		CEBAE31D24137D56005A7571 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBAE31C24137D56005A7571 /* Home.storyboard */; };
 		CEBAE32024137D97005A7571 /* CustomerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE31F24137D97005A7571 /* CustomerListVC.swift */; };
 		CEBAE32224137E3C005A7571 /* AddCustomerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE32124137E3C005A7571 /* AddCustomerVC.swift */; };
-		CEBAE32524137F7F005A7571 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE32424137F7F005A7571 /* Helper.swift */; };
 		CEBAE32724137F93005A7571 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE32624137F93005A7571 /* Protocol.swift */; };
 		CEBAE32924137FA4005A7571 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE32824137FA4005A7571 /* DataSource.swift */; };
 		CEBAE32C2413803B005A7571 /* Customer.json in Resources */ = {isa = PBXBuildFile; fileRef = CEBAE32B2413803B005A7571 /* Customer.json */; };
@@ -50,7 +49,6 @@
 		CEBAE31C24137D56005A7571 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		CEBAE31F24137D97005A7571 /* CustomerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListVC.swift; sourceTree = "<group>"; };
 		CEBAE32124137E3C005A7571 /* AddCustomerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomerVC.swift; sourceTree = "<group>"; };
-		CEBAE32424137F7F005A7571 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		CEBAE32624137F93005A7571 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 		CEBAE32824137FA4005A7571 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		CEBAE32B2413803B005A7571 /* Customer.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Customer.json; sourceTree = "<group>"; };
@@ -115,38 +113,9 @@
 				CEBAE31224136888005A7571 /* Others */,
 				CEBAE2EB24131961005A7571 /* View */,
 				CEBAE2EA2413195D005A7571 /* Model */,
-				CEBAE2E92413195A005A7571 /* View Model */,
-				CEBAE2E824131956005A7571 /* Controller */,
-				CEBAE2E72413194D005A7571 /* DataBase */,
 				CE9EDC52240F7A6F00BBA832 /* Info.plist */,
 			);
 			path = C0767722_MidTerm_MAD3115W2020;
-			sourceTree = "<group>";
-		};
-		CEBAE2E72413194D005A7571 /* DataBase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DataBase;
-			sourceTree = "<group>";
-		};
-		CEBAE2E824131956005A7571 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				CEBAE31E24137D66005A7571 /* Home */,
-				CEBAE2EC24131A0F005A7571 /* Welcome */,
-				CE9EDC44240F7A6D00BBA832 /* AppDelegate.swift */,
-				CE9EDC46240F7A6D00BBA832 /* SceneDelegate.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		CEBAE2E92413195A005A7571 /* View Model */ = {
-			isa = PBXGroup;
-			children = (
-				CEBAE3332413826E005A7571 /* CustomersVM.swift */,
-			);
-			path = "View Model";
 			sourceTree = "<group>";
 		};
 		CEBAE2EA2413195D005A7571 /* Model */ = {
@@ -154,6 +123,7 @@
 			children = (
 				CEBAE32D241381A3005A7571 /* Singelton.swift */,
 				CEBAE32F241381B6005A7571 /* BaseCustomers.swift */,
+				CEBAE3332413826E005A7571 /* CustomersVM.swift */,
 				CEBAE331241381CA005A7571 /* CustomersM.swift */,
 			);
 			path = Model;
@@ -162,20 +132,18 @@
 		CEBAE2EB24131961005A7571 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CEBAE31F24137D97005A7571 /* CustomerListVC.swift */,
 				CE9EDC4A240F7A6D00BBA832 /* Welcome.storyboard */,
 				CE9EDC4D240F7A6F00BBA832 /* Assets.xcassets */,
+				CE9EDC48240F7A6D00BBA832 /* SignInViewController.swift */,
 				CE9EDC4F240F7A6F00BBA832 /* LaunchScreen.storyboard */,
+				CE9EDC46240F7A6D00BBA832 /* SceneDelegate.swift */,
+				CEBAE335241382DC005A7571 /* CustomerListTVC.swift */,
+				CE9EDC44240F7A6D00BBA832 /* AppDelegate.swift */,
 				CEBAE31C24137D56005A7571 /* Home.storyboard */,
+				CEBAE32124137E3C005A7571 /* AddCustomerVC.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		CEBAE2EC24131A0F005A7571 /* Welcome */ = {
-			isa = PBXGroup;
-			children = (
-				CE9EDC48240F7A6D00BBA832 /* SignInViewController.swift */,
-			);
-			path = Welcome;
 			sourceTree = "<group>";
 		};
 		CEBAE31224136888005A7571 /* Others */ = {
@@ -198,20 +166,9 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		CEBAE31E24137D66005A7571 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				CEBAE31F24137D97005A7571 /* CustomerListVC.swift */,
-				CEBAE32124137E3C005A7571 /* AddCustomerVC.swift */,
-				CEBAE335241382DC005A7571 /* CustomerListTVC.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
 		CEBAE32324137F5E005A7571 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				CEBAE32424137F7F005A7571 /* Helper.swift */,
 				CEBAE32624137F93005A7571 /* Protocol.swift */,
 				CEBAE32824137FA4005A7571 /* DataSource.swift */,
 				CEBAE32B2413803B005A7571 /* Customer.json */,
@@ -345,7 +302,6 @@
 				CEBAE32224137E3C005A7571 /* AddCustomerVC.swift in Sources */,
 				CE9EDC45240F7A6D00BBA832 /* AppDelegate.swift in Sources */,
 				CE9EDC47240F7A6D00BBA832 /* SceneDelegate.swift in Sources */,
-				CEBAE32524137F7F005A7571 /* Helper.swift in Sources */,
 				CEBAE32024137D97005A7571 /* CustomerListVC.swift in Sources */,
 				CEBAE31924136A5B005A7571 /* UIViewController.swift in Sources */,
 				CEBAE336241382DC005A7571 /* CustomerListTVC.swift in Sources */,

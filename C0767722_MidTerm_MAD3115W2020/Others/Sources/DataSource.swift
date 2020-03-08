@@ -9,7 +9,26 @@
 
 import Foundation
 class DataSource {
-    
+    // MARK:- Life Cycle
+      //
+      
+      // MARK:- Functions
+      /** parsing method 1
+       */
+      static func readJsonWith(name file: String) -> [CustomersM] {
+          let url = Bundle.main.url(forResource: file, withExtension: "json")
+          guard let jsonData = url else{ return [] }
+          guard let data = try? Data(contentsOf: jsonData) else { return [] }
+          do {
+              let decoder = JSONDecoder()
+              let baseModel = try decoder.decode(BaseCustomers.self, from: data)
+              guard let customers = baseModel.cust else { return [] }
+              return customers
+          } catch let err {
+              debugPrint(err)
+              return []
+          }
+      }
   
     
 }

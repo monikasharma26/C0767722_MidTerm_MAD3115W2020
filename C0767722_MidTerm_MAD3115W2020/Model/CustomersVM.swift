@@ -58,4 +58,18 @@ extension CustomerListVC: UITableViewDataSource, UITableViewDelegate {
            return 100
        }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        //
+        let storyboard = UIStoryboard(name: "Detail", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "CustomerDetailVC") as! CustomerDetailVC
+        
+        vc.custDetailArr = indexPath.row
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
 }

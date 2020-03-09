@@ -34,13 +34,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.4205882984474808" green="0.38425818482163077" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.43022448806729113" green="0.44288553298148581" blue="0.94905076141889932" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="3kE-Rw-D2y"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W58-qC-6Zo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-20.289855072463769" y="-34.151785714285715"/>
+            <point key="canvasLocation" x="-86" y="-470"/>
         </scene>
     </scenes>
     <resources>

@@ -43,7 +43,7 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="44K-sr-J0H">
                                                             <rect key="frame" x="25" y="12" width="64" height="64"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ukl-hC-nsY">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-user-80" translatesAutoresizingMaskIntoConstraints="NO" id="ukl-hC-nsY">
                                                                     <rect key="frame" x="10" y="10" width="44" height="44"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="44" id="4fi-Jh-vPz"/>
@@ -327,7 +327,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userIcon" translatesAutoresizingMaskIntoConstraints="NO" id="2Tr-G4-VIy">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-user-80" translatesAutoresizingMaskIntoConstraints="NO" id="2Tr-G4-VIy">
                                 <rect key="frame" x="153" y="213" width="108" height="108"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="2Tr-G4-VIy" secondAttribute="height" multiplier="1:1" id="BEI-h1-ZU8"/>
@@ -344,7 +344,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.39945212904856697" green="0.39609962672510957" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.44423315361792465" green="0.46034435633441478" blue="0.96220653553299496" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="2Tr-G4-VIy" firstAttribute="centerX" secondItem="FAT-3M-dzZ" secondAttribute="centerX" id="6L4-LN-ikQ"/>
                             <constraint firstItem="dsU-LM-E50" firstAttribute="trailing" secondItem="FAT-3M-dzZ" secondAttribute="trailing" constant="20" id="Dy6-CW-ufV"/>
@@ -376,8 +376,8 @@
     </scenes>
     <resources>
         <image name="addCustmIcon" width="24" height="24"/>
+        <image name="icons8-user-80" width="80" height="80"/>
         <image name="logout" width="24" height="24"/>
         <image name="nextIcon" width="24" height="24"/>
-        <image name="userIcon" width="34" height="34"/>
     </resources>
 </document>

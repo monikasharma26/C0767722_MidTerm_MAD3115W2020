@@ -102,7 +102,7 @@ import UIKit
            let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,10}"
            let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
            if emailTest.evaluate(with: email_tf.text) == false {
-               self.showAlert(title: "", message: "Please Enter Valid Email Address..!!!")
+               self.showAlert(title: "", message: "Please Enter Valid Email Address!")
                return false
            }
            

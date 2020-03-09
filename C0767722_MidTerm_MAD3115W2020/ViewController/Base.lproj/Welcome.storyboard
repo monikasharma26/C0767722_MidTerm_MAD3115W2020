@@ -11,6 +11,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="gYD-9w-pvG">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ba-Mo-jwO" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="SignInVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hjy-JW-NeT" customClass="SignInViewController" customModule="C0767722_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aWB-Oy-M2M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -211,7 +212,6 @@
                         <outlet property="userN_view" destination="fpJ-xD-8eg" id="QYx-mq-f75"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8ba-Mo-jwO" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="102.45535714285714"/>
         </scene>

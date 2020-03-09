@@ -8,23 +8,54 @@
 
 import UIKit
 
+/// this is the class for showing customer detail and all the pending bill list.
 class CustomerDetailVC: UIViewController {
 
+    // MARK: - Properties
+    var seleInd = -1
+    
+    var customerDetail: CustomersVM?
+    var custDetailArr = Int()
+    
+    @IBOutlet var customerN_lbl: UILabel!
+    @IBOutlet var email_lbl: UILabel!
+    @IBOutlet var detail_view: UIView!
+    @IBOutlet var titleDate_lbl: UILabel!
+
+    
+    
+    
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        //
+        initSetup()
+        
+        
+    }
+        
+    // MARK: - Action
+    @IBAction func backBtnClicked(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func initSetup() {
+        customerDetail =  Singelton.intance.customerArr[custDetailArr]
+        let date = Date()
+        let dformatter = DateFormatter()
+        dformatter.dateFormat = "d MMM"
+        let stDate = dformatter.string(from: date)
+        let eformatter = DateFormatter()
+        eformatter.dateFormat = "EEEE"
+        let stDay = eformatter.string(from: date)
+        titleDate_lbl.text = String(format: "%@, %@", stDay, stDate)
+        customerN_lbl.text = customerDetail?.calFull
+        email_lbl.text = customerDetail?.email
     }
-    */
-
+    
+   
+    
 }
+
+

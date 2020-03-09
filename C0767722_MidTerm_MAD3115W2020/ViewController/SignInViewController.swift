@@ -35,12 +35,12 @@ class SignInViewController: UIViewController {
     
     // MARK: - Action
     @IBAction func userHintBtnClicked(_ sender: Any) {
-        self.showAlert(title: "User Name Hint :", message: "Enter Characters and Numbers")
+        self.showAlert(title: "User Name Hint :", message: "Enter UserName")
     }
    
     
     @IBAction func passwdHintBtnClicked(_ sender: Any) {
-        self.showAlert(title: "Password Hint:", message: "Enter characters")
+        self.showAlert(title: "Password Hint:", message: "Enter Password")
     }
     
     @IBAction func rememberBtnClicked(_ sender: UIButton) {
@@ -73,7 +73,7 @@ class SignInViewController: UIViewController {
                 //
                 self.navigateScreen(storyboard: "Home", controller: "CustomerListVC")
             }else{
-                self.showAlert(title: "MS", message: msg)
+                self.showAlert(title: "", message: msg)
             }
         }
         
@@ -109,11 +109,11 @@ class SignInViewController: UIViewController {
     func checkTextFields() -> Bool {
         
         if userN_tf.text == "" {
-            self.showAlert(title: "MS", message: "Username is required.")
+            self.showAlert(title: "UserName", message: "Username is required.")
             return false
         }
         if passwd_tf.text == "" {
-            self.showAlert(title: "MS", message: "Password is required.")
+            self.showAlert(title: "Password", message: "Password is required.")
             return false
         }
         

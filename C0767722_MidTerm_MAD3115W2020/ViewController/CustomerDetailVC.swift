@@ -50,7 +50,7 @@ class CustomerDetailVC: UIViewController {
         eformatter.dateFormat = "EEEE"
         let stDay = eformatter.string(from: date)
         titleDate_lbl.text = String(format: "%@, %@", stDay, stDate)
-        customerN_lbl.text = customerDetail?.calFull
+        customerN_lbl.text = customerDetail?.fullName
         email_lbl.text = customerDetail?.email
     }
     

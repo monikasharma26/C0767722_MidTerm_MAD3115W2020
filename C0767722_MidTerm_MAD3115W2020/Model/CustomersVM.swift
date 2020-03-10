@@ -16,9 +16,7 @@ class CustomersVM: NSObject {
     var firstName: String?
     var lastName: String?
     var email: String?
-
-    /// this is used to concat fisrt name and last name
-    var calFull: String {
+    var fullName: String {
         get {
               return (firstName ?? "") + " " + (lastName ?? "")
            }
@@ -54,15 +52,11 @@ extension CustomerListVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-           
            return 100
        }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //
         tableView.deselectRow(at: indexPath, animated: true)
-        
-        //
         let storyboard = UIStoryboard(name: "Detail", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "CustomerDetailVC") as! CustomerDetailVC
         

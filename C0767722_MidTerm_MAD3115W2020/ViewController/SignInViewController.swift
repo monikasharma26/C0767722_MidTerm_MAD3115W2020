@@ -10,14 +10,14 @@ import UIKit
 
 class SignInViewController: UIViewController {
     // MARK: - Properties
-       @IBOutlet var upConta_view: UIView!
-       @IBOutlet var inConta_view: UIView!
-       @IBOutlet var userN_view: UIView!
-       @IBOutlet var passwd_view: UIView!
+       @IBOutlet var Signinview: UIView!
+       @IBOutlet var Textfiledview: UIView!
+       @IBOutlet var userview: UIView!
+       @IBOutlet var passwordview: UIView!
        @IBOutlet var remembBtn: UIButton!
        @IBOutlet var signInBtn: UIButton!
-       @IBOutlet var userN_tf: UITextField!
-       @IBOutlet var passwd_tf: UITextField!
+       @IBOutlet var usertxt: UITextField!
+       @IBOutlet var passwordtxt: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,8 +55,8 @@ class SignInViewController: UIViewController {
         //
         if remembBtn.isSelected == true {
             
-            UserDefaults.standard.set(userN_tf.text, forKey: "user_name")
-            UserDefaults.standard.set(passwd_tf.text, forKey: "password")
+            UserDefaults.standard.set(usertxt.text, forKey: "user_name")
+            UserDefaults.standard.set(passwordtxt.text, forKey: "password")
         }else{
             if let appDomain = Bundle.main.bundleIdentifier {
                 UserDefaults.standard.removePersistentDomain(forName: appDomain)
@@ -66,7 +66,6 @@ class SignInViewController: UIViewController {
         // check validation
         if self.checkTextFields() {
             
-            // check plist
             let boolChk = self.readDataInfoFromPlistFile().0
             let msg = self.readDataInfoFromPlistFile().1
             if boolChk {
@@ -85,34 +84,22 @@ class SignInViewController: UIViewController {
         if let userName = UserDefaults.standard.string(forKey: "user_name"), let passwd = UserDefaults.standard.string(forKey: "password") {
             //
             remembBtn.isSelected = true
-            userN_tf.text = userName
-            passwd_tf.text = passwd
+            usertxt.text = userName
+            passwordtxt.text = passwd
         }else{
             // reset values
-            userN_tf.text = ""
-            passwd_tf.text = ""
+            usertxt.text = ""
+            passwordtxt.text = ""
         }
-    }
-    
-    func setUpUI() {
-        //
-        userN_view.addBorder(view: userN_view, radius: 7.0, width: 1, color: UIColor.lightGray.cgColor)
-        passwd_view.addBorder(view: passwd_view, radius: 7.0, width: 1, color: UIColor.lightGray.cgColor)
-        signInBtn.addBorder(view: signInBtn, radius: 7.0, width: 1, color: UIColor.lightGray.cgColor)
-        //
-        upConta_view.addShadow(view: upConta_view, color: UIColor.hexStringToUIColor(hex: "6D67FD").cgColor, offset: CGSize(width: 0, height: 3), opacity: 0.8, radius: 5)
-        inConta_view.addShadow(view: inConta_view, color: UIColor.lightGray.cgColor, offset: CGSize(width: 0, height: 3), opacity: 0.4, radius: 5)
-        signInBtn.addShadow(view: signInBtn, color: UIColor.hexStringToUIColor(hex: "6D67FD").cgColor, offset: CGSize(width: 0, height: 3), opacity: 0.8, radius: 5)
-        
     }
     
     func checkTextFields() -> Bool {
         
-        if userN_tf.text == "" {
+        if usertxt.text == "" {
             self.showAlert(title: "UserName", message: "Username is required.")
             return false
         }
-        if passwd_tf.text == "" {
+        if passwordtxt.text == "" {
             self.showAlert(title: "Password", message: "Password is required.")
             return false
         }
@@ -129,7 +116,6 @@ class SignInViewController: UIViewController {
                    //Reading the users
                    if let users = dict["appUsers"] as? [[String: String]]
                    {
-                        //
                         var strMsg = String()
                         for user in users
                         {
@@ -138,11 +124,11 @@ class SignInViewController: UIViewController {
                             let passwd = user["password"]!
                             
                             // match entered data
-                            if(userName != userN_tf.text){
+                            if(userName != usertxt.text){
                                 strMsg = "Wrong Username"
-                            }else if(userName == userN_tf.text && passwd != passwd_tf.text){
+                            }else if(userName == usertxt.text && passwd != passwordtxt.text){
                                 strMsg = "Wrong Password"
-                            }else if(userName == userN_tf.text && passwd == passwd_tf.text) {
+                            }else if(userName == usertxt.text && passwd == passwordtxt.text) {
                                 strMsg = ""
                                 return (true, "")
                             }

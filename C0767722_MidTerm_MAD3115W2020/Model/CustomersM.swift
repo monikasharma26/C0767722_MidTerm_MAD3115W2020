@@ -15,6 +15,4 @@ struct CustomersM: Codable {
       var firstName: String?
       var lastName: String?
       var email: String?
-    
-    
 }

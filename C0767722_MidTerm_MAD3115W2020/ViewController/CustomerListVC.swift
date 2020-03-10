@@ -15,9 +15,6 @@ class CustomerListVC: UIViewController {
     // MARK:- Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        //
-        setUpUI()
-        //
         initSetup()
         // register to receive notification...
         NotificationCenter.default.addObserver(self, selector: #selector(CustomerListVC.refresh), name:  Notification.Name("customerListRefresh"), object: nil)
@@ -34,16 +31,13 @@ class CustomerListVC: UIViewController {
         let alertController = UIAlertController(title: "Signout!!", message: "Do You want to Sign Out?", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Yes", style: UIAlertAction.Style.destructive) {
             UIAlertAction in
-            
-            //
             self.navigationController?.popToRootViewController(animated: true)
             
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel) {
             UIAlertAction in
         }
-        
-        // Add the actions
+            
         alertController.addAction(okAction)
         alertController.addAction(cancelAction)
         
@@ -61,18 +55,10 @@ class CustomerListVC: UIViewController {
     
     // MARK: - Helper
     func initSetup(){
-        //
-        refresh()
         Singelton.intance.populateCustomer()
         
     }
-    
-    func setUpUI() {
-        //
-        top_view.addShadow(view: top_view, color: UIColor.hexStringToUIColor(hex: "6D67FD").cgColor, offset: CGSize(width: 0, height: 3), opacity: 0.5, radius: 5)
-        
-    }
-    
+
     @objc func refresh() {
         //
         custmList_tv.reloadData()

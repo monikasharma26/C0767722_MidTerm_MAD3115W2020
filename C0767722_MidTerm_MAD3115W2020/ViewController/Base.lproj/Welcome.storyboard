@@ -11,13 +11,12 @@
         <!--Sign In View Controller-->
         <scene sceneID="gYD-9w-pvG">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8ba-Mo-jwO" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="SignInVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hjy-JW-NeT" customClass="SignInViewController" customModule="C0767722_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aWB-Oy-M2M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yo-zT-PAE">
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yo-zT-PAE" userLabel="Signinview">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="411"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liC-Pz-CeT">
@@ -39,7 +38,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.42745098040000001" green="0.4039215686" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="liC-Pz-CeT" firstAttribute="leading" secondItem="4yo-zT-PAE" secondAttribute="leading" constant="20" id="0X1-6t-qNc"/>
                                     <constraint firstItem="OTh-sq-XMp" firstAttribute="leading" secondItem="4yo-zT-PAE" secondAttribute="leading" constant="20" id="Au1-pC-L5T"/>
@@ -49,13 +48,13 @@
                                     <constraint firstAttribute="trailing" secondItem="liC-Pz-CeT" secondAttribute="trailing" constant="20" id="z4I-zj-6Gl"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="geR-UR-sLj">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="geR-UR-sLj" userLabel="Textfiledview">
                                 <rect key="frame" x="15" y="171" width="384" height="290"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpJ-xD-8eg">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpJ-xD-8eg" userLabel="Userview">
                                         <rect key="frame" x="20" y="30" width="344" height="50"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wxE-vi-QD4">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wxE-vi-QD4" userLabel="Usertxt">
                                                 <rect key="frame" x="8" y="0.0" width="286" height="50"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -81,10 +80,10 @@
                                             <constraint firstItem="wxE-vi-QD4" firstAttribute="top" secondItem="fpJ-xD-8eg" secondAttribute="top" id="sEv-Zo-OT2"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VjK-Td-gJ6">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VjK-Td-gJ6" userLabel="Passwordview">
                                         <rect key="frame" x="20" y="100" width="344" height="50"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTb-sm-FiJ">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTb-sm-FiJ" userLabel="Passwordtxt">
                                                 <rect key="frame" x="8" y="0.0" width="286" height="50"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -113,7 +112,7 @@
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hux-KQ-094">
                                         <rect key="frame" x="20" y="215" width="344" height="50"/>
-                                        <color key="backgroundColor" red="0.42745098040000001" green="0.4039215686" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="4xl-fu-EvE"/>
                                         </constraints>
@@ -131,7 +130,7 @@
                                             <constraint firstAttribute="height" constant="30" id="T3P-s2-1ph"/>
                                         </constraints>
                                         <state key="normal" title="  Remember me" image="unCheckIcon">
-                                            <color key="titleColor" red="0.42745098040000001" green="0.4039215686" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <state key="selected" image="checkIcon"/>
                                         <connections>
@@ -160,7 +159,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQS-MN-PAw">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQS-MN-PAw">
                                 <rect key="frame" x="20" y="820" width="374" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="BLS-Ex-F7g"/>
@@ -202,16 +201,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="tee-bc-Ayg"/>
                     <connections>
-                        <outlet property="inConta_view" destination="geR-UR-sLj" id="qoL-gn-Lvr"/>
-                        <outlet property="passwd_tf" destination="WTb-sm-FiJ" id="zo1-VS-PIs"/>
-                        <outlet property="passwd_view" destination="VjK-Td-gJ6" id="bVU-mm-bGf"/>
+                        <outlet property="Signinview" destination="4yo-zT-PAE" id="tmf-rc-mBh"/>
+                        <outlet property="Textfiledview" destination="geR-UR-sLj" id="wEd-gI-udh"/>
+                        <outlet property="passwordtxt" destination="WTb-sm-FiJ" id="3RA-H9-pj6"/>
+                        <outlet property="passwordview" destination="WTb-sm-FiJ" id="Nz0-yu-i4Q"/>
                         <outlet property="remembBtn" destination="1tt-hg-LGc" id="fn1-uK-Tdc"/>
                         <outlet property="signInBtn" destination="Hux-KQ-094" id="fWV-ku-S1k"/>
-                        <outlet property="upConta_view" destination="4yo-zT-PAE" id="wPH-pZ-4rz"/>
-                        <outlet property="userN_tf" destination="wxE-vi-QD4" id="kvh-db-eYL"/>
-                        <outlet property="userN_view" destination="fpJ-xD-8eg" id="QYx-mq-f75"/>
+                        <outlet property="usertxt" destination="wxE-vi-QD4" id="ewB-02-Uof"/>
+                        <outlet property="userview" destination="wxE-vi-QD4" id="zuR-Mq-wwk"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ba-Mo-jwO" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="102.45535714285714"/>
         </scene>

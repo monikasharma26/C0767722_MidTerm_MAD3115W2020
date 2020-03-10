@@ -21,7 +21,7 @@ class CustomerListTVC: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        contan_view.addBorder(view: contan_view, radius: 8.0, width: 1, color: UIColor.lightGray.cgColor)
+       // contan_view.addBorder(view: contan_view, radius: 8.0, width: 1, color: UIColor.lightGray.cgColor)
         
     }
 
@@ -32,7 +32,7 @@ class CustomerListTVC: UITableViewCell {
     // MARK: - Helper
     func setDisplay(customer: CustomersVM) {
         //
-        name_lbl.text = customer.calFull
+        name_lbl.text = customer.fullName
         email_lbl.text = customer.email ?? ""
     }
     

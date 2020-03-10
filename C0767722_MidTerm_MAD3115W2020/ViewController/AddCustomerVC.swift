@@ -26,10 +26,6 @@ import UIKit
        // MARK:- Life Cycle
        override func viewDidLoad() {
            super.viewDidLoad()
-           
-           //
-           setUpUI()
-
        }
        // MARK: - Action
        @IBAction func cancelBtnClicked(_ sender: Any) {
@@ -74,16 +70,7 @@ import UIKit
            // Present the controller
            self.present(alertController, animated: true, completion: nil)
        }
-       
-       func setUpUI() {
-           //
-           fNameInn_view.addBorder(view: fNameInn_view, radius: 7.0, width: 1, color: UIColor.lightGray.cgColor)
-           lNameInn_view.addBorder(view: lNameInn_view, radius: 7.0, width: 1, color: UIColor.lightGray.cgColor)
-           emailInn_view.addBorder(view: emailInn_view, radius: 7.0, width: 1, color: UIColor.lightGray.cgColor)
-           cancelBtn.addBorder(view: cancelBtn, radius: 8.0, width: 1, color: UIColor.hexStringToUIColor(hex: "6D67FD").cgColor)
-           contan_view.addShadow(view: contan_view, color: UIColor.white.cgColor, offset: CGSize(width: -4, height: 4), opacity: 0.8, radius: 20)
-       }
-       
+    
        //
        func checkTextFields() -> Bool {
            //

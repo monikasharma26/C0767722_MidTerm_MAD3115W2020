@@ -17,8 +17,8 @@ class Singelton {
         // fetching data from json...
         let customers = DataSource.readJsonWith(name: "Customer")
         Singelton.intance.customerArr.removeAll()
-        for cust_mer in customers {
-            Singelton.intance.customerArr.append(CustomersVM(customer: cust_mer))
+        for custmer in customers {
+            Singelton.intance.customerArr.append(CustomersVM(customer: custmer))
         }
         
     }

@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // keyboard_manager...
         IQKeyboardManager.shared.enable = true
-        
         //
         sleep(3)
         

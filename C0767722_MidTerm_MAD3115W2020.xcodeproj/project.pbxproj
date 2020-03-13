@@ -17,7 +17,7 @@
 		CE9EDC4E240F7A6F00BBA832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9EDC4D240F7A6F00BBA832 /* Assets.xcassets */; };
 		CE9EDC51240F7A6F00BBA832 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9EDC4F240F7A6F00BBA832 /* LaunchScreen.storyboard */; };
 		CEBAE3172413695A005A7571 /* DataInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEBAE3162413695A005A7571 /* DataInfo.plist */; };
-		CEBAE31924136A5B005A7571 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE31824136A5B005A7571 /* UIViewController.swift */; };
+		CEBAE31924136A5B005A7571 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE31824136A5B005A7571 /* UIViewControllerExtension.swift */; };
 		CEBAE31D24137D56005A7571 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBAE31C24137D56005A7571 /* Home.storyboard */; };
 		CEBAE32024137D97005A7571 /* CustomerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE31F24137D97005A7571 /* CustomerListVC.swift */; };
 		CEBAE32224137E3C005A7571 /* AddCustomerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE32124137E3C005A7571 /* AddCustomerVC.swift */; };
@@ -29,6 +29,11 @@
 		CEBAE332241381CA005A7571 /* CustomersM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE331241381CA005A7571 /* CustomersM.swift */; };
 		CEBAE3342413826E005A7571 /* CustomersVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE3332413826E005A7571 /* CustomersVM.swift */; };
 		CEBAE336241382DC005A7571 /* CustomerListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE335241382DC005A7571 /* CustomerListTVC.swift */; };
+		CEF4FBB9241B425000BD1DFC /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4FBB8241B425000BD1DFC /* UIViewExtension.swift */; };
+		CEF4FBBB241B430E00BD1DFC /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4FBBA241B430E00BD1DFC /* UIColorExtension.swift */; };
+		CEF4FBBD241B483C00BD1DFC /* AddNewBillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4FBBC241B483C00BD1DFC /* AddNewBillVC.swift */; };
+		CEF4FBBF241B488600BD1DFC /* BillM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4FBBE241B488600BD1DFC /* BillM.swift */; };
+		CEF4FBC1241BDCBB00BD1DFC /* FloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4FBC0241BDCBB00BD1DFC /* FloatExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +42,6 @@
 		8A0822B75E6025820F83E340 /* Pods_C0767722_MidTerm_MAD3115W2020.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_C0767722_MidTerm_MAD3115W2020.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9BBDFE2415B53C00D15376 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		CE9BBE002415B5F900D15376 /* CustomerDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailVC.swift; sourceTree = "<group>"; };
-		CE9EDC41240F7A6D00BBA832 /* C0767722_MidTerm_MAD3115W2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = C0767722_MidTerm_MAD3115W2020.app; path = "/Users/user/Documents/IOS/IOSMIDTERM/C0767722_MidTerm_MAD3115W2020 2/build/Debug-iphoneos/C0767722_MidTerm_MAD3115W2020.app"; sourceTree = "<absolute>"; };
 		CE9EDC44240F7A6D00BBA832 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9EDC46240F7A6D00BBA832 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE9EDC48240F7A6D00BBA832 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +50,7 @@
 		CE9EDC50240F7A6F00BBA832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE9EDC52240F7A6F00BBA832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEBAE3162413695A005A7571 /* DataInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DataInfo.plist; sourceTree = "<group>"; };
-		CEBAE31824136A5B005A7571 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		CEBAE31824136A5B005A7571 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		CEBAE31C24137D56005A7571 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		CEBAE31F24137D97005A7571 /* CustomerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListVC.swift; sourceTree = "<group>"; };
 		CEBAE32124137E3C005A7571 /* AddCustomerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomerVC.swift; sourceTree = "<group>"; };
@@ -58,6 +62,12 @@
 		CEBAE331241381CA005A7571 /* CustomersM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomersM.swift; sourceTree = "<group>"; };
 		CEBAE3332413826E005A7571 /* CustomersVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomersVM.swift; sourceTree = "<group>"; };
 		CEBAE335241382DC005A7571 /* CustomerListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTVC.swift; sourceTree = "<group>"; };
+		CEF4FBB7241B3F2900BD1DFC /* C0767722_MidTerm_MAD3115W2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C0767722_MidTerm_MAD3115W2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF4FBB8241B425000BD1DFC /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		CEF4FBBA241B430E00BD1DFC /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		CEF4FBBC241B483C00BD1DFC /* AddNewBillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBillVC.swift; sourceTree = "<group>"; };
+		CEF4FBBE241B488600BD1DFC /* BillM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillM.swift; sourceTree = "<group>"; };
+		CEF4FBC0241BDCBB00BD1DFC /* FloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +88,6 @@
 				16CBE1B69DE01060BBA7C072 /* Pods-C0767722_MidTerm_MAD3115W2020.debug.xcconfig */,
 				34039750EE035DAD4E3E2D57 /* Pods-C0767722_MidTerm_MAD3115W2020.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -89,6 +98,7 @@
 				CE9EDC52240F7A6F00BBA832 /* Info.plist */,
 				0FBB78FFEA8107385D820E16 /* Pods */,
 				E817CE0A46213AA26A49C4BE /* Frameworks */,
+				CEF4FBB7241B3F2900BD1DFC /* C0767722_MidTerm_MAD3115W2020.app */,
 			);
 			sourceTree = "<group>";
 			wrapsLines = 1;
@@ -96,6 +106,7 @@
 		CE9EDC43240F7A6D00BBA832 /* C0767722_MidTerm_MAD3115W2020 */ = {
 			isa = PBXGroup;
 			children = (
+				CEF4FBC2241BDF5700BD1DFC /* CustomersDetails */,
 				CEBAE31224136888005A7571 /* Others */,
 				CEBAE2EB24131961005A7571 /* ViewController */,
 				CEBAE2EA2413195D005A7571 /* Model */,
@@ -110,6 +121,7 @@
 				CEBAE32F241381B6005A7571 /* BaseCustomers.swift */,
 				CEBAE3332413826E005A7571 /* CustomersVM.swift */,
 				CEBAE331241381CA005A7571 /* CustomersM.swift */,
+				CEF4FBBE241B488600BD1DFC /* BillM.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,6 +141,7 @@
 				CEBAE32124137E3C005A7571 /* AddCustomerVC.swift */,
 				CE9BBDFE2415B53C00D15376 /* Detail.storyboard */,
 				CE9BBE002415B5F900D15376 /* CustomerDetailVC.swift */,
+				CEF4FBBC241B483C00BD1DFC /* AddNewBillVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -145,7 +158,10 @@
 		CEBAE31324136894005A7571 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				CEBAE31824136A5B005A7571 /* UIViewController.swift */,
+				CEBAE31824136A5B005A7571 /* UIViewControllerExtension.swift */,
+				CEF4FBB8241B425000BD1DFC /* UIViewExtension.swift */,
+				CEF4FBBA241B430E00BD1DFC /* UIColorExtension.swift */,
+				CEF4FBC0241BDCBB00BD1DFC /* FloatExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -159,6 +175,21 @@
 				CEBAE32B2413803B005A7571 /* Customer.json */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		CEF4FBC2241BDF5700BD1DFC /* CustomersDetails */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4FBC3241BDF6F00BD1DFC /* Bills */,
+			);
+			path = CustomersDetails;
+			sourceTree = "<group>";
+		};
+		CEF4FBC3241BDF6F00BD1DFC /* Bills */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bills;
 			sourceTree = "<group>";
 		};
 		E817CE0A46213AA26A49C4BE /* Frameworks */ = {
@@ -188,7 +219,7 @@
 			);
 			name = C0767722_MidTerm_MAD3115W2020;
 			productName = C0767722_MidTerm_MAD3115W2020;
-			productReference = CE9EDC41240F7A6D00BBA832 /* C0767722_MidTerm_MAD3115W2020.app */;
+			productReference = CEF4FBB7241B3F2900BD1DFC /* C0767722_MidTerm_MAD3115W2020.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -288,16 +319,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF4FBB9241B425000BD1DFC /* UIViewExtension.swift in Sources */,
 				CE9EDC49240F7A6D00BBA832 /* SignInViewController.swift in Sources */,
+				CEF4FBBD241B483C00BD1DFC /* AddNewBillVC.swift in Sources */,
 				CEBAE3342413826E005A7571 /* CustomersVM.swift in Sources */,
 				CEBAE32E241381A3005A7571 /* Singelton.swift in Sources */,
+				CEF4FBC1241BDCBB00BD1DFC /* FloatExtension.swift in Sources */,
 				CEBAE330241381B6005A7571 /* BaseCustomers.swift in Sources */,
+				CEF4FBBF241B488600BD1DFC /* BillM.swift in Sources */,
 				CEBAE32224137E3C005A7571 /* AddCustomerVC.swift in Sources */,
 				CE9EDC45240F7A6D00BBA832 /* AppDelegate.swift in Sources */,
 				CE9EDC47240F7A6D00BBA832 /* SceneDelegate.swift in Sources */,
 				CEBAE32024137D97005A7571 /* CustomerListVC.swift in Sources */,
-				CEBAE31924136A5B005A7571 /* UIViewController.swift in Sources */,
+				CEBAE31924136A5B005A7571 /* UIViewControllerExtension.swift in Sources */,
 				CEBAE336241382DC005A7571 /* CustomerListTVC.swift in Sources */,
+				CEF4FBBB241B430E00BD1DFC /* UIColorExtension.swift in Sources */,
 				CEBAE32924137FA4005A7571 /* DataSource.swift in Sources */,
 				CEBAE32724137F93005A7571 /* Protocol.swift in Sources */,
 				CEBAE332241381CA005A7571 /* CustomersM.swift in Sources */,

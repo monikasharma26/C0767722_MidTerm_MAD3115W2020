@@ -5,11 +5,12 @@
 //  Created by S@i on 2020-03-08.
 //  Copyright © 2020 S@i. All rights reserved.
 //
+/// this is the class for showing customer detail and all the pending bill list.
+
+import Foundation
 import UIKit
 
-
-/// this is the class for showing customer detail and all the pending bill list.
-class CustomerDetailVC: UIViewController {
+class CustomerDetailVC : UIViewController {
 
     // MARK: - Properties
     var seleInd = -1
@@ -33,10 +34,6 @@ class CustomerDetailVC: UIViewController {
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        //
-        setupUI()
-        
         //
         initSetup()
         
@@ -50,26 +47,15 @@ class CustomerDetailVC: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
-  /*  @IBAction func addBillBtnClicked(_ sender: Any) {
+    @IBAction func addBillBtnClicked(_ sender: Any) {
         //
         let storyboard = UIStoryboard(name: "Detail", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "AddNewBillVC") as! AddNewBillVC
-        vc.cus = custmDetail?.id ?? 0
+      //  vc.customer_id = custmDetail?.id ?? 0
         self.present(vc, animated: true, completion: nil)
       
-    }*/
-    
-    // MARK: - SetupUISS
-    func setupUI() {
-        design_lblL.roundCorners(corners: [.bottomRight, .topRight], radius: 8.0)
-        design_lblR.roundCorners(corners: [.bottomLeft, .topLeft], radius: 8.0)
-        
-        //
-        detail_view.addShadow(view: detail_view, color: UIColor.hexStringToUIColor(hex: "6D67FD").cgColor, offset: CGSize(width: 0, height: 3), opacity: 0.7, radius: 8)
-        design_lblL.addShadow(view: design_lblL, color: UIColor.gray.cgColor, offset: CGSize(width: 0, height: 3), opacity: 0.7, radius: 8)
-        design_lblR.addShadow(view: design_lblR, color: UIColor.gray.cgColor, offset: CGSize(width: 0, height: 3), opacity: 0.7, radius: 8)
-        
     }
+
     
     func initSetup() {
         //
@@ -95,7 +81,7 @@ class CustomerDetailVC: UIViewController {
         bill_tv.reloadData()
         
         //
-        calcInsurance()
+        totalBills()
     }
     
     @objc func refresh() {
@@ -105,21 +91,82 @@ class CustomerDetailVC: UIViewController {
         bill_tv.reloadData()
         
         //
-        calcInsurance()
+       totalBills()
     }
     
-    func calcInsurance() {
+    func totalBills() {
         //
         var sum = Float()
         if let bills = custmDetail?.bills {
             for bill in bills {
                 sum += bill.amount ?? 0.00
+                print("Sum is : \(sum)")
             }
         }
+        
+        //
         total_lbl.text = sum.currency()
        
     }
     
 }
+
+// MARK:- UITableViewDataSource
+extension CustomerDetailVC: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return billsList?.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomerDetailTVC", for: indexPath ) as! CustomerDetailTVC
+
+        //
+        cell.setDisplay(bill: (billsList?[indexPath.row])!)
+        
+        //
+        cell.desc_view.isHidden = true
+        cell.upDown_img.image = UIImage(named: "down1x")
+        if(seleInd == indexPath.row){
+            cell.desc_view.isHidden = false
+            cell.upDown_img.image = UIImage(named: "up1x")
+            
+        }
+        
+        return cell
+    }
+    
+}
+
+// MARK:- UITableViewDelegate
+extension CustomerDetailVC: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+
+        if(seleInd == indexPath.row){
+            return UITableView.automaticDimension//tableView.automatic
+        }
+        return 130
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //
+        tableView.deselectRow(at: indexPath, animated: true)
+                
+        let prevSlInd = seleInd
+        seleInd = indexPath.row
+        let indexPath = IndexPath(item: seleInd, section: 0)
+        tableView.reloadRows(at: [indexPath], with: .none)
+        
+        if(prevSlInd >= 0){
+            let indexPath = IndexPath(item: prevSlInd, section: 0)
+            tableView.reloadRows(at: [indexPath], with: .none)
+        }
+    }
+   
+}
+
 
 

@@ -34,6 +34,8 @@
 		CEF4FBBD241B483C00BD1DFC /* AddNewBillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4FBBC241B483C00BD1DFC /* AddNewBillVC.swift */; };
 		CEF4FBBF241B488600BD1DFC /* BillM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4FBBE241B488600BD1DFC /* BillM.swift */; };
 		CEF4FBC1241BDCBB00BD1DFC /* FloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4FBC0241BDCBB00BD1DFC /* FloatExtension.swift */; };
+		CEF4FBC5241BE84600BD1DFC /* CustomerDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4FBC4241BE84600BD1DFC /* CustomerDetailTVC.swift */; };
+		CEF4FBC7241BFE0100BD1DFC /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4FBC6241BFE0100BD1DFC /* Mobile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		CEF4FBBC241B483C00BD1DFC /* AddNewBillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBillVC.swift; sourceTree = "<group>"; };
 		CEF4FBBE241B488600BD1DFC /* BillM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillM.swift; sourceTree = "<group>"; };
 		CEF4FBC0241BDCBB00BD1DFC /* FloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatExtension.swift; sourceTree = "<group>"; };
+		CEF4FBC4241BE84600BD1DFC /* CustomerDetailTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailTVC.swift; sourceTree = "<group>"; };
+		CEF4FBC6241BFE0100BD1DFC /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,7 @@
 				CE9BBDFE2415B53C00D15376 /* Detail.storyboard */,
 				CE9BBE002415B5F900D15376 /* CustomerDetailVC.swift */,
 				CEF4FBBC241B483C00BD1DFC /* AddNewBillVC.swift */,
+				CEF4FBC4241BE84600BD1DFC /* CustomerDetailTVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 		CEF4FBC3241BDF6F00BD1DFC /* Bills */ = {
 			isa = PBXGroup;
 			children = (
+				CEF4FBC6241BFE0100BD1DFC /* Mobile.swift */,
 			);
 			path = Bills;
 			sourceTree = "<group>";
@@ -322,6 +328,7 @@
 				CEF4FBB9241B425000BD1DFC /* UIViewExtension.swift in Sources */,
 				CE9EDC49240F7A6D00BBA832 /* SignInViewController.swift in Sources */,
 				CEF4FBBD241B483C00BD1DFC /* AddNewBillVC.swift in Sources */,
+				CEF4FBC7241BFE0100BD1DFC /* Mobile.swift in Sources */,
 				CEBAE3342413826E005A7571 /* CustomersVM.swift in Sources */,
 				CEBAE32E241381A3005A7571 /* Singelton.swift in Sources */,
 				CEF4FBC1241BDCBB00BD1DFC /* FloatExtension.swift in Sources */,
@@ -335,6 +342,7 @@
 				CEBAE336241382DC005A7571 /* CustomerListTVC.swift in Sources */,
 				CEF4FBBB241B430E00BD1DFC /* UIColorExtension.swift in Sources */,
 				CEBAE32924137FA4005A7571 /* DataSource.swift in Sources */,
+				CEF4FBC5241BE84600BD1DFC /* CustomerDetailTVC.swift in Sources */,
 				CEBAE32724137F93005A7571 /* Protocol.swift in Sources */,
 				CEBAE332241381CA005A7571 /* CustomersM.swift in Sources */,
 				CE9BBE012415B5F900D15376 /* CustomerDetailVC.swift in Sources */,

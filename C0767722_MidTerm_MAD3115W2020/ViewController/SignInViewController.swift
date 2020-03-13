@@ -21,6 +21,7 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpUI()
         // Do any additional setup after loading the view.
     }
     override func viewWillDisappear(_ animated: Bool) {
@@ -143,6 +144,18 @@ class SignInViewController: UIViewController {
         
            return (false, "Invalid information, check again.")
            
+    }
+    //Marks: -  Setup UI controllers
+    func setUpUI() {
+        //
+        Signinview.addBorder(view: Signinview, radius: 7.0, width: 1, color: UIColor.lightGray.cgColor)
+        Textfiledview.addBorder(view: Textfiledview, radius: 7.0, width: 1, color: UIColor.lightGray.cgColor)
+        signInBtn.addBorder(view: signInBtn, radius: 7.0, width: 1, color: UIColor.lightGray.cgColor)
+        //
+        Signinview.addShadow(view: Signinview, color: UIColor.hexStringToUIColor(hex: "6D67FD").cgColor, offset: CGSize(width: 0, height: 3), opacity: 0.8, radius: 5)
+        Textfiledview.addShadow(view: Textfiledview, color: UIColor.lightGray.cgColor, offset: CGSize(width: 0, height: 3), opacity: 0.4, radius: 5)
+        signInBtn.addShadow(view: signInBtn, color: UIColor.hexStringToUIColor(hex: "6D67FD").cgColor, offset: CGSize(width: 0, height: 3), opacity: 0.8, radius: 5)
+        
     }
     
 }

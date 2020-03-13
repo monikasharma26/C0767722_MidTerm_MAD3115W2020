@@ -7,9 +7,7 @@
 //
 
 import Foundation
-class Bill
-{
-    enum BillType: String, CaseIterable {
+enum Type: String {
         case internet = "Internet", mobile = "Mobile", hydro = "Hydro", insurance = "Insurance"
     }
 
@@ -48,4 +46,4 @@ class Bill
        
     }
 
-}
+

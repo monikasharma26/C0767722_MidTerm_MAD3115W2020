@@ -16,6 +16,7 @@ class CustomersVM: NSObject {
     var firstName: String?
     var lastName: String?
     var email: String?
+     var bills: [BillM]?
     var fullName: String {
         get {
               return (firstName ?? "") + " " + (lastName ?? "")

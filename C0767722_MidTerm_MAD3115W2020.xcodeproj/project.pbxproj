@@ -38,6 +38,7 @@
 		CEF4FBC7241BFE0100BD1DFC /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4FBC6241BFE0100BD1DFC /* Mobile.swift */; };
 		CEF4FBC9241BFE2C00BD1DFC /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4FBC8241BFE2C00BD1DFC /* Internet.swift */; };
 		CEF4FBCB241BFE5E00BD1DFC /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4FBCA241BFE5E00BD1DFC /* Hydro.swift */; };
+		CEF4FBCD241BFEC200BD1DFC /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4FBCC241BFEC200BD1DFC /* Bill.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		CEF4FBC6241BFE0100BD1DFC /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		CEF4FBC8241BFE2C00BD1DFC /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
 		CEF4FBCA241BFE5E00BD1DFC /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
+		CEF4FBCC241BFEC200BD1DFC /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 				CEF4FBC6241BFE0100BD1DFC /* Mobile.swift */,
 				CEF4FBC8241BFE2C00BD1DFC /* Internet.swift */,
 				CEF4FBCA241BFE5E00BD1DFC /* Hydro.swift */,
+				CEF4FBCC241BFEC200BD1DFC /* Bill.swift */,
 			);
 			path = Bills;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				CEBAE32024137D97005A7571 /* CustomerListVC.swift in Sources */,
 				CEBAE31924136A5B005A7571 /* UIViewControllerExtension.swift in Sources */,
 				CEBAE336241382DC005A7571 /* CustomerListTVC.swift in Sources */,
+				CEF4FBCD241BFEC200BD1DFC /* Bill.swift in Sources */,
 				CEF4FBBB241B430E00BD1DFC /* UIColorExtension.swift in Sources */,
 				CEF4FBC9241BFE2C00BD1DFC /* Internet.swift in Sources */,
 				CEBAE32924137FA4005A7571 /* DataSource.swift in Sources */,

@@ -29,6 +29,7 @@ class CustomersVM: NSObject {
         self.firstName = customer.firstName
         self.lastName = customer.lastName
         self.email = customer.email
+          self.bills = customer.bills
     }
     
 }

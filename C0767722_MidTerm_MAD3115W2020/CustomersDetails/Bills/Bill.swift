@@ -7,3 +7,45 @@
 //
 
 import Foundation
+class Bill
+{
+    enum BillType: String, CaseIterable {
+        case internet = "Internet", mobile = "Mobile", hydro = "Hydro", insurance = "Insurance"
+    }
+
+    class Bill {
+        
+        private var billId: Int?
+        private var billDate: String?
+        internal var billType: BillType?
+        private var billAmount: Float?
+        
+        var getBillId: Int {
+            get {
+                return billId ?? 0
+            }
+        }
+        
+        var getBillDate: String {
+            get {
+                return billDate ?? ""
+            }
+        }
+        
+        var getBillAmount: Float {
+            get {
+                return billAmount ?? 0
+            }
+        }
+        
+        init(billId: Int?, billDate: String?, billType: BillType?, billAmount: Float?) {
+            self.billId = billId
+            self.billDate = billDate
+            self.billType = billType
+            self.billAmount = billAmount
+        }
+        
+       
+    }
+
+}

@@ -37,6 +37,7 @@
 		CEF4FBC5241BE84600BD1DFC /* CustomerDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4FBC4241BE84600BD1DFC /* CustomerDetailTVC.swift */; };
 		CEF4FBC7241BFE0100BD1DFC /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4FBC6241BFE0100BD1DFC /* Mobile.swift */; };
 		CEF4FBC9241BFE2C00BD1DFC /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4FBC8241BFE2C00BD1DFC /* Internet.swift */; };
+		CEF4FBCB241BFE5E00BD1DFC /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4FBCA241BFE5E00BD1DFC /* Hydro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		CEF4FBC4241BE84600BD1DFC /* CustomerDetailTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailTVC.swift; sourceTree = "<group>"; };
 		CEF4FBC6241BFE0100BD1DFC /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		CEF4FBC8241BFE2C00BD1DFC /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
+		CEF4FBCA241BFE5E00BD1DFC /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 			children = (
 				CEF4FBC6241BFE0100BD1DFC /* Mobile.swift */,
 				CEF4FBC8241BFE2C00BD1DFC /* Internet.swift */,
+				CEF4FBCA241BFE5E00BD1DFC /* Hydro.swift */,
 			);
 			path = Bills;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				CEBAE3342413826E005A7571 /* CustomersVM.swift in Sources */,
 				CEBAE32E241381A3005A7571 /* Singelton.swift in Sources */,
 				CEF4FBC1241BDCBB00BD1DFC /* FloatExtension.swift in Sources */,
+				CEF4FBCB241BFE5E00BD1DFC /* Hydro.swift in Sources */,
 				CEBAE330241381B6005A7571 /* BaseCustomers.swift in Sources */,
 				CEF4FBBF241B488600BD1DFC /* BillM.swift in Sources */,
 				CEBAE32224137E3C005A7571 /* AddCustomerVC.swift in Sources */,

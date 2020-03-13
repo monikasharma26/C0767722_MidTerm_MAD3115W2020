@@ -7,6 +7,6 @@
 //
 
 import Foundation
-class Internet{
+class Internet: Bill{
     
 }

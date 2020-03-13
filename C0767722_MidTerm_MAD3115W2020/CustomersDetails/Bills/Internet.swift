@@ -7,6 +7,21 @@
 //
 
 import Foundation
-class Internet: Bill{
-    
+class Internet: Bill {
+
+internal var providerName: String?
+private var internetGBUsed: Int?
+
+var internetUsed: String {
+    if let internetGBUsed = internetGBUsed {
+        return internetGBUsed.billWithGB
+    }
+    return "No Internet used"
+}
+
+init(billId: Int?, billDate: String?, billType: BillType?, billAmount: Float?, providerName: String?, internetGBUsed: Int?) {
+    super.init(billId: billId, billDate: billDate, billType: billType, billAmount: billAmount)
+    self.providerName = providerName
+    self.internetGBUsed = internetGBUsed
+}
 }
